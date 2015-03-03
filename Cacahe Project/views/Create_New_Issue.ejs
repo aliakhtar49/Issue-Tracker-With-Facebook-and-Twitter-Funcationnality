@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+    <title>Creating New Issue</title>
+</head>
+<body style="background-color: #000000">
+<!--<ul class="nav nav-pills">
+
+
+
+
+    <li><a href="/index_page">LogOut</a></li>
+
+    <li><a id='click_on_profile' href="#"><i class='icon-user icon-white'></i>ali </a></li>
+
+</ul>
+
+
+
+
+
+
+<form method="post" enctype="multipart/form-data" name="feedback" action="/issue1"  onSubmit="return checkform()">
+    <div class="span2" id="NewRepostry">
+        <z style="margin-left: 50px;margin-bottom: 2px;padding-bottom: 2px;">Great repository names are short and memorable. Need inspiration?</z>
+        <div style="margin-top: 50px;">
+            <d style="margin-left: 50px;font-size: 30px;">Issue Name</d><input id='name_of_issue'name="issue_name" style="margin-left: 50px;width:500px;height: 30px" style="width: 500px;" type="text" placeholder="Enter Issue Name"><br>
+            <d style="margin-left: 50px;font-size: 30px;">Description(optional)</d><input  style="margin-left: 50px;width:500px;height: 30px" style="width: 500px;" type="text" placeholder="Enter Description"><br>
+            <f style="margin-left: 50px;font-size: 30px;">  Website Name(optional)</f><br><input style="margin-left: 50px;height: 30px;width:500px" style="width: 500px;" type="text" placeholder="Enter Website">
+            <div  style="margin-top: 35px;line-height: 20px">
+                <z style="margin-left: 25px;line-height: 0px;">Upload  Issues In  A  File
+                    With The Extension .txt or .cpp</z>
+            </div><br>
+            <input  class="btn-large" type="file" id='file' name="thumbnail"><br/>
+            <input  class="btn btn-danger"  style=" margin-top:50px; width: 200px; height: 38px;margin-left: 150px; padding: 0px;"    type="submit">
+        </div></div>
+</form>
+<div>
+
+</div>-->
+
+<div class="row-fluid">
+    <div class="span2 offset1">
+        <input  id="autocomplete" title="type &quot;a&quot;">
+        <Button class="btn-danger" id="SerachAllContent">Search <i class="icon-search"></i></Button>
+    </div>
+    <div class="span6 offset2">
+        <ul class="nav ">
+            <li style="float: right" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"      href="#">
+                    <div style="display: inline-block" id="ali"></div>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/">Profile</a></li>
+                    <li><a href="#">Account Setting</a></li>
+                    <li><a href="#">Privace Setting</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/log_out">LogOut</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span4 offset3">
+        <ul class="thumbnails">
+            <li>
+                <div  style="background-color: #f5f5f5" class="thumbnail">
+                    <div class="get_user_image"></div>
+                    <div class="caption">
+                        <h2 >Create New Issue</h2>
+                        <form id='signup' class="form-horizontal" method="post" enctype="multipart/form-data" name="feedback" action="/create_an_issue" onSubmit="return checkform()" >
+                            <div class="control-group">
+                                <label class="control-label" for="inputEmail">Issue Name</label>
+                                <div class="controls">
+                                    <input type="text"  id="name_of_issue" name="issue_name" placeholder="Issue Name">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">Description </label>
+                                <div class="controls">
+                                    <textarea type="text"  name="description" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">Github Profile  </label>
+                                <div class="controls">
+                                    <input type="text" name="profile" placeholder="Github Profile ">
+                                </div>
+                            </div>
+                            <input  class="btn-large" type="file" id='file' name="thumbnail"><br/>
+                            <input  class="btn btn-danger"  style=" margin-top:50px; width: 200px; height: 38px;margin-left: 150px; padding: 0px;"    type="submit">
+                        </form>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+</div>
+
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script src="/javascripts/Create_New_Issue.js"></script>
+</body>
+</html>

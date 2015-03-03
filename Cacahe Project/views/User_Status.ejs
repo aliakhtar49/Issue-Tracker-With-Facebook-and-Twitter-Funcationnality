@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/jquery-ui-1.10.4.custom.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+    <title></title>
+</head>
+
+<body style="background: #000000">
+<div class="row-fluid">
+    <div class="span2 offset1">
+
+    </div>
+    <div class="span6 offset2">
+        <ul class="nav ">
+            <li style="float: right" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"      href="#">
+                    <div style="display: inline-block" id="ali"></div>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/">Profile</a></li>
+
+                    <li><a href="/log_out">LogOut</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div  class="row-fluid">
+    <!-- Statring Of First Statsus -->
+    <div style="background-color: #ECECEC" class="span8 offset2" >
+        <div id="start_status_here">
+            <div style="background-color: #ECECEC;margin-top: 46px;border-bottom: 1px solid rgb(179, 175, 175);margin-bottom: 25px;padding-bottom: 25px;" class="span8 offset2" id="status_text">
+                <input style="width: 100%" id='status_description' type="text" placeholder="Enter Description"/><br/>
+                <textarea id="status" style="width: 100%" placeholder="Write Ststus"></textarea><button style="float: right" class="btn-primary" id="post">Post</button>
+            </div>
+            <div style="margin-top: 32px;" id="already_start_status_here">
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script src="/javascripts/jquery-ui-1.10.4.custom.js"></script>
+<script src="/javascripts/date/dateFormat.js"></script>
+<script src="/javascripts/date/jquery.dateFormat.js"></script>
+<script src="/javascripts/User_Profile.js"></script>
+<script src="/javascripts/Friends.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        var issue_value = 0;
+        $.ajax
+        ({
+          url: '/get_followers_post',
+          type:'post',
+          success:function(res)
+          {
+              for(var i=0;i < res.data.following.length + 1 ;i++)
+              {
+                  alert(res.data.following.length);
+                  if(i == res.data.following.length)
+                  {
+                      //email = res.data.following[i].email;
+                      runAjax(res.email,i);
+                  }
+                  else
+                  {
+               email = res.data.following[i].email;
+                  runAjax(email,i);
+                  }
+              }
+              /*This Function is Iterating AJax Loop And Get All Fllowers Status To Show In Home Page*/
+              function runAjax(email,i)
+              {
+                  $.ajax
+                  ({
+                      url:'/Get_Other_Status',
+                      type:'POST',
+                      data:{email:email},
+                      success:function(res)
+                      {
+                          for(var i= 0;i<res.length;i++)
+                          {
+                              var date = $.format.date(res[i].createdAt, "dd/MM/yyyy");
+                              var time = jQuery.format.prettyDate(res[i].createdAt);
+                              // alert(res.data[0].createdAt);
+                              //alert("h");
+                              $('#already_start_status_here').append("<div style='margin-top: 25px' class='row-fluid'><div style='background-color: #ECECEC' class='span8 offset2'><div class='media'><a class='pull-left' href='#'><div id=" + "issue_image" +issue_value + "></div></a><div class='media-body'><h4 class='media-heading'>"+ res[i].user_by+"</h4><blockquote><p class='well-large'> "+ res[i].status_description + " </p></blockquote><pre>"+ res[i].status_content +"</pre><div style='float: right'>Created at  : " + date +  "<br/>  " + time+ "     </div>        <div class='row-fluid'><div class='span8'><input  style='width: 87%' id='cmt_text' type='text' placeholder='Enter Your Comment Over Herer'><button style='float: right' class='btn-primary' id='cmt_button'>Comment</button></div><div class='span2 offset3'></div>        </div>        </div>        </div>        </div>        </div>        <div class='row-fluid'>                <div   style='margin-top: 50px' id='comment_area' class='span8 offset2'> </div>        </div>");
+                              issue_value++;
+                              var a = issue_value-1;
+                              StatusImage(a,email);
+
+
+
+                          }
+                          /*This Is Iterating Ajax In Loop To Get Each Status Image Of Profile*/
+                          function StatusImage(a,email)
+                          {
+                             // alert(a);
+                              $.ajax
+                              ({
+                                  url:'/Get_User_Image',
+                                  type:'POST',
+                                  data:{email:email},
+                                  success:function(Image)
+                                  {
+
+                                      if(Image == "yes")
+                                      {
+
+                                          $('#issue_image'+ a +'').append("<img style='max-width:60px;height:64px;' class='media-object' src='/img/SignUpBackGround.jpg'/>");
+
+                                      }
+                                      else
+                                      {
+
+                                          var oImg = document.createElement("img");
+
+                                          oImg.setAttribute('src', 'data:image/png;base64,' + Image);
+
+                                          oImg.setAttribute('class', 'media-object');
+
+                                          oImg.setAttribute('style','width:60px;height:64px')
+
+                                          $('#issue_image'+ a +'').append(oImg);
+                                          //issue_value++;
+                                      }
+                                  }
+                              })
+                          }
+                          /*The End This Is Iterating Ajax In Loop To Get Each Status Image Of Profile*/
+//alert(res.length);
+                      }
+                  })
+
+              }
+              /*This Function is Iterating AJax Loop And Get All Fllowers Status To Show In Home Page*/
+          }
+
+        })
+      /*  var issue_value = 0;*/
+
+        $('#post').on("click",function()
+        {
+            var status_description = $('#status_description').val();
+            var  status = $('#status').val();
+            $.ajax
+            ({
+             url:'/insert_status',
+             type:'post',
+             data:{status_description:status_description,status:status},
+             success:function(res)
+                 {
+
+                     //alert(res.name);
+                     var date = $.format.date(res.data[0].createdAt, "dd/MM/yyyy");
+                     var time = jQuery.format.prettyDate(res.data[0].createdAt);
+                    // alert(res.data[0].createdAt);
+                     $('#already_start_status_here').append("<div style='margin-top: 25px' class='row-fluid'><div style='background-color: #ECECEC' class='span8 offset2'><div class='media'><a class='pull-left' href='#'><div id=" + "issue_image" +issue_value + "></div></a><div class='media-body'><h4 class='media-heading'>"+ res.name+"</h4><blockquote><p class='well-large'> "+ status_description + " </p></blockquote><pre>"+ status +"</pre><div style='float: right'>Created at  : " + date +  "<br/>  " + time+ "     </div>        <div class='row-fluid'><div class='span8'><input  style='width: 87%' id='cmt_text' type='text' placeholder='Enter Your Comment Over Herer'><button style='float: right' class='btn-primary' id='cmt_button'>Comment</button></div><div class='span2 offset3'></div>        </div>        </div>        </div>        </div>        </div>        <div class='row-fluid'>                <div   style='margin-top: 50px' id='comment_area' class='span8 offset2'> </div>        </div>");
+                      $.ajax
+                      ({
+                                  url:'/Get_Current_User_Info',
+                                  type:'POST',
+                                  success:function(res)
+                                  {
+                                        $.ajax
+                                      ({
+                                      url:'/Get_User_Image',
+                                      type:'POST',
+                                      data:{email:res.email},
+                                      success:function(Image)
+                                      {
+
+                                          if(Image == "yes")
+                                          {
+
+                                              $('#issue_image'+ issue_value +'').append("<img style='max-width:60px;height:64px;' class='media-object' src='/img/SignUpBackGround.jpg'/>");
+                                              issue_value++;
+                                          }
+                                          else
+                                          {
+
+                                          var oImg = document.createElement("img");
+
+                                          oImg.setAttribute('src', 'data:image/png;base64,' + Image);
+
+                                          oImg.setAttribute('class', 'media-object');
+
+                                          oImg.setAttribute('style','width:60px;height:64px')
+
+                                              $('#issue_image'+ issue_value +'').append(oImg);
+                                              issue_value++;
+                                          }
+                                      }
+                                      })
+
+                                  }
+                      })
+                 }
+            })
+
+        });
+
+        $.ajax
+        ({
+            url:'/Get_Current_User_Info',
+            type:'POST',
+            success:function(res)
+            {
+                $.ajax
+                ({
+                    url:'/Get_User_Image',
+                    type:'POST',
+                    data:{email:res.email},
+                    success:function(Image)
+                    {
+
+                        if(Image == "yes")
+                        {
+                            $("#ali").append("<img style='max-width:20px;height:20px;' src='/img/SignUpBackGround.jpg'/>");
+
+                        }
+                        else
+                        {
+                            var oImg1 = document.createElement("img");
+
+                            oImg1.setAttribute('src', 'data:image/png;base64,' + Image);
+
+                            oImg1.setAttribute('id', 'image');
+
+                            oImg1.setAttribute('style','width:20px;height:20px');
+
+                            $("#ali").append(oImg1);
+
+                        }
+                    }
+                })
+
+            }
+        })
+      /*  $('#comment_area1').append("<div style='border-bottom: 1px solid gray ;padding-bottom: 15px;' class='media'> <a class='pull-left' href='#'> <div  id='comment_image'></div></a><div class='media-body'><h4 class='media-heading'>ali skahtar</h4><a class='delete_comment_class' id='delete_image' href='#'><i   style='float: right' class='icon-remove'></i></a><p>ggggggggggg</p><div class='media'> </div></div></div>");
+        $('#comment_image').append("<img style='max-width:60px;height:64px;' class='media-object' src='/img/SignUpBackGround.jpg'/>");*/
+    });
+</script>
+</body>
+</html>

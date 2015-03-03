@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My First Bootstrap Application</title>
+    <link rel='stylesheet' href='../public/stylesheets/style.css' />
+    <link rel="stylesheet"href="../public/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="../public/stylesheets/bootstrap.css"/>
+    <script src="../public/javascripts/jquery-2.0.3.js"></script>
+    <script src="../public/javascripts/bootstrap.js"></script>
+    <title></title>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<!--<div class="row">
+    <div class="span8">ali akhtar </div>
+    <div   class="span4">this is my </div>
+</div>-->
+<!--<div class="row">
+    <div  class="span2">ali</div>
+    <div  class="span9 offset3">akhtar</div>
+</div>-->
+<!--<div class="row">
+    <div class="span9">
+        Level 1 of column
+        <div class="row">
+            <div class="span6">Level 2</div>
+            <div class="span3">Level 2</div>
+        </div>
+    </div>
+</div>-->
+<!--<div class="row">
+    <div style="border: 1px solid green" class="span9">Level 2 </div>
+
+</div>
+<div class="row">
+    <div style="border: 1px solid green" class="span6">Level 1</div>
+    <div style="border: 1px solid green" class="span3">Level 1</div>
+</div>-->
+<!--<div class="row-fluid">
+    <div style="border: 1px solid green" class="span4">ali</div>
+    <div style="border: 1px solid green" class="span8">...akhtar</div>
+</div>
+<div class="row-fluid">
+    <div style="border: 1px solid green" class="span4">.level 2..</div>
+    <div style="border: 1px solid green" class="span4 offset2">. level2 ..</div>
+</div>-->
+<div class="row-fluid">
+    <div style="border:1px solid green" class="span8">
+Level 1
+    </div>
+</div>
+<div class="row-fluid">
+    <div style="border:1px solid green" class="span6">.ali..</div>
+    <div style="border:1px solid green" class="span6">..akhtar .</div>
+</div>
+<div class="lead">
+    This is the paragraph for a kind fof
+
+</div>
+<small>Small</small>
+<em>Thsi ssitalic</em>
+<strong>Bold</strong>
+<p class="muted">This content is muted</p>
+<p class="text-warning">This content carries a warning class</p>
+<p class="text-error">This content carries an error class</p>
+<p class="text-info">This content carries an info class</p>
+<p class="text-success">This content carries a success class</p>
+<p>This content has <em>emphasis</em>, and can be <strong>bold</strong></p>
+<abbr title="Real Simple Syndication">RSS</abbr>
+<address>
+    <strong>O'Reilly Media, Inc.</strong><br>
+    1005 Gravenstein HWY North<br>
+    Sebastopol, CA 95472<br>
+    <abbr title="Phone">P:</abbr> <a href="tel:+17078277000">(707) 827-7000</a>
+</address>
+<address>
+    <strong>Jake Spurlock</strong><br>
+    <a href="mailto:#">flast@oreilly.com</a>
+</address>
+<blockquote>
+    <p>That this is needed, desperately needed, is indicated by the
+        incredible uptake of Bootstrap. I use it in all the server software
+        I'm working on. And it shows through in the templating language I'm
+        developing, so everyone who uses it will find it's "just there" and
+        works, any time you want to do a Bootstrap technique. Nothing to do,
+        no libraries to include. It's as if it were part of the hardware.
+        Same approach that Apple took with the Mac OS in 1984.</p>
+    <small>Developer of RSS, <cite title="Source Title">Dave Winer</cite>
+    </small>
+</blockquote>
+<p>Instead of always using divs, in HTML5, you can use new elements like
+    <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, and
+    <code>&lt;footer&gt;</code>. The html should look something like this:</p>
+<pre>
+&lt;article&gt;
+&lt;h1&gt;Article Heading&lt;/h1&gt;
+&lt;/article&gt;
+</pre>
+<table class="table table-striped">
+    <caption>This is the table heading</caption>
+    <thead>
+    <tr>
+        <th class="tablebordered">row 1 </th>
+        <th>row 1 2 </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>row 1  23</td>
+        <td>..ddddd.</td>
+    </tr>
+    </tbody>
+</table>
+<form>
+    <fieldset>
+        <legend>Legend</legend>
+        <label for="name">Label name</label>
+        <input type="text" id="name"
+               placeholder="Type something…">
+<span class="help-block">Example block-level help
+text here.</span>
+        <label class="checkbox" for="checkbox">
+            <input type="checkbox" id="checkbox">
+            Check me out
+        </label>
+        <button type="submit" class="btn">Submit</button>
+    </fieldset>
+</form>
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputEmail">Email</label>
+        <div class="controls">
+            <input type="text" id="inputEmail" placeholder="Email">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputPassword">Password</label>
+        <div class="controls">
+            <input type="password" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox">Remember me
+            </label>
+            <button type="submit" class="btn">Sign in</button>
+        </div>
+    </div>
+</form>
+<form class="form-horizontal">
+<div class="control-group">
+    <label class="control-label" for="inputEmail"> Email</label>
+    <div class="controls">
+        <input type="text" placeholder="Inpur"/>
+    </div>
+</div>
+</form>
+<div class="input-prepend">
+    <span class="add-on">@</span>
+    <input type="text" placeholder="aaaa">
+</div>
+<input class="span1" type="text" placeholder=".span1">
+<input class="span2" type="text" placeholder=".span2">
+<input class="span3" type="text" placeholder=".span3">
+<select class="span1">
+    ...
+</select>
+<select class="span2">
+    ...
+</select>
+<select class="span3">
+    ...
+</select>
+<!--<img src="../public/img/SignUpBackGround.jpg" class="img-rounded">-->
+<i class="icon-edit icon-white"></i>
+<!--<ul class="dropdown-menu" role="menu">
+    <li><a tabindex="-1" href="#">Action</a></li>
+    <li><a tabindex="-1" href="#">Another action</a></li>
+    <li><a tabindex="-1" href="#">Something else here</a></li>
+    <li class="divider"></li>
+
+    <li><a tabindex="-1" href="#">Separated link</a></li>
+</ul>-->
+<div class="btn-group">
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+</div>
+<ul class="nav nav-tabs">
+    <li class="dropdown">
+        <a class="dropdown-toggle"
+           data-toggle="dropdown"
+           href="#">
+            Dropdown
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </li>
+</ul>
+<ul class="nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">First Link</a></li>
+    <li><a href="#">Second Link</a></li>
+    <li class="divider-vertical"></li>
+    <li><a href="#">Third Link</a></li>
+</ul>
+<a href="#" class="thumbnail">
+    <img alt="Kittens!" style="" src="../public/img/SignUpBackGround.jpg">
+</a>
+Now tha
+<ul class="thumbnails">
+    <li class="span4">
+        <div class="thumbnail">
+            <img  src="../public/img/SignUpBackGround.jpg" alt="300x200" style="width: 300;height: 200">
+            <div class="caption">
+                <h3>Meats</h3>
+                <p>Bacon ipsum dolor sit amet sirloin pancetta shoulder tongue doner,
+                    shank sausage.</p>
+                <p><a href="#" class="btn btn-primary">Eat now!</a> <a href="#"
+                                                                       class="btn">Later...</a></p>
+            </div>
+        </div>
+    </li>
+    <li class="span4">
+        ...
+    </li>
+</ul>
+Alerts
+<div class="alert">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>Warning!</strong>Not to be alarmist, but you have now been alerted.
+</div>
+
+
+<div class="media">
+    <a class="pull-left" href="#">
+        <img style="width: 60px;height: 64px;" class="media-object" src="a.jpg">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        <p>.sssssss..</p>
+        <!-- Nested media object -->
+        <div class="media">
+            ssssssssssssssssssssssssssssssss...
+        </div>
+    </div>
+</div>
+
+
+<div class="well">
+    ..Well Class.
+</div>
+
+
+<div class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;</button>
+        <h3>Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <p>One fine body…</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
+
+<div class="clearfix">ddddddddddddddddddd</div>
+
+
+
+
+<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo
+    modal</a>
+<button id="myModal1">II</button>
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+                aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <p>One fine body…</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal"
+                aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+    </div>
+</div>
+
+<li class="dropdown">
+    <a href="#" id="drop" role="button" class="dropdown-toggle"
+       data-toggle="dropdown">Word <b class="caret"></b></a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
+        <li><a tabindex="-1" href="#">MAKE magazine</a></li>
+        <li><a tabindex="-1" href="#">WordPress DevelopmentS</a></li>
+        <li><a tabindex="-1" href="#">Speaking Engagements</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#">Social Media</a></li>
+    </ul>
+</li>
+
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Jake's BBQ</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#pork">Pork</a></li>
+                    <li><a href="#beef">Beef</a></li>
+                    <li><a href="#chicken">Chicken</a></li>
+                </ul>
+            </div><!-- /.nav-collapse -->
+        </div>
+    </div><!-- /navbar-inner -->
+</div>
+
+
+<ul class="nav nav-tabs">
+    <li><a href="#home" data-toggle="tab">Home</a></li>
+    <li><a href="#profile" data-toggle="tab">Profile</a></li>
+    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+    <li><a href="#settings" data-toggle="tab">Settings</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="home">...</div>
+    <div class="tab-pane" id="profile">...</div>
+    <div class="tab-pane" id="messages">...</div>
+    <div class="tab-pane" id="settings">...</div>
+</div>
+
+<a href="#" rel="tooltip" title="This is the tooltip">Tooltip Example</a>
+<a href="#" class="btn" rel="popover" title="Using Popover" data-content="Just add content to the data-content attribute.">Click Me!</a>
+<script>
+    $(document).ready(function(){
+        //$('body').off('.data-api');
+        alert('Page has loaded');
+        $('#myModal1').on("click",function(){
+            $('#myModal').modal('show');
+        });
+// Once the page has loaded and is ready, an alert will fire.
+    });
+</script>
+</body>
+</html>

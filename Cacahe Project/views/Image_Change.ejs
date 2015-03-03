@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+    <title></title>
+</head>
+<body style="background: url('/img/SignUpBackGround.jpg')" >
+<div style="float: right;margin-right: 104px;" class="span6 offset2">
+    <ul class="nav ">
+        <li style="float: right" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"      href="#">
+                <div style="display: inline-block" id="ali"></div>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="/acount_setting">Account Setting</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/">Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="/log_out">LogOut</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div style="margin-top: 50px;" id="upload_img">
+    <div id="inside_image">
+        <form id="my_form" method="POST" enctype="multipart/form-data" action="/image_change">
+            <input type="file" id='file' name="thumbnail" ><br><br>
+            <input id="submit" class="btn-large" type="submit" value="Proceed">
+        </form>
+    </div>
+</div>
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>

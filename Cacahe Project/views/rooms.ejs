@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+</head>
+<body style="background: #000000">
+<div class="row-fluid">
+    <div class="span2 offset1">
+
+    </div>
+    <div class="span6 offset2">
+        <ul style="position: relative;float: right" >
+            <li><a href="/rooms">Chat</a></li>
+
+        </ul>
+        <ul class="nav ">
+            <li style="float: right" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"      href="#">
+                    <div style="display: inline-block" id="ali"></div>
+                    <b class="caret"></b>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="/">Profile</a></li>
+                    <li><a href="#">Account Setting</a></li>
+                    <li><a href="#">Privace Setting</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#">LogOut</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="margin-top: 25px;" class="row-fluid ">
+    <div style="background-color: #f5f5f5;" class="span12 offset1">
+        <div class="span4">
+            <ul  style="height: 200px;" class="thumbnails">
+                <li>
+                    <div  class="thumbnail">
+                        <div class="get_user_image"></div>
+                       <!-- <img  src="/img/SignUpBackGround.jpg" alt="100x200" style="max-width: 30%;margin-left: 0px;">-->
+
+                        <div style="height: 250px;">
+                            <section style="margin-top: 15px">
+                                <div class="caption">
+                                    <h3 id="new_room">Start a new Room</h3>
+                                    <div class="row-fluid ">
+                                        <div class="span3">
+                                            <p><input id="new_room_name" type="text"/></p>
+                                            <p>  <input  class="btn-large" id="new_room_btn" type="button" value="Start"/></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div  class="span8">
+            <div class="caption " >
+                <h3 id="new_room"> Join A Room</h3>
+                <div id="rooms_list">
+
+                    <!--<p class="span3">Room name</p>
+                    <p class="span3 offset2">   2 Users</p>
+                    <a class="span2"  href="#">Join</a>-->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="/javascripts/rooms.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<!--<script src="/javascripts/private_chat.js"></script>-->
+<script>
+
+
+</script>
+</body>
+</html>

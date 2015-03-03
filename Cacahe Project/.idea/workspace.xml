@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3639e991-4d17-4696-b186-8f92c2c6ab49" name="Default" comment="" />
+    <ignored path="show_data_mongo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="show_data_mongo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="User_Post.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/User_Post.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="3" selection-start="1098" selection-end="1098" vertical-scroll-proportion="11.769231" vertical-offset="680" max-vertical-offset="3026">
+              <folding>
+                <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#li#0;tag#ul#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1408553375055" expanded="false" signature="4360:4387" placeholder="..." />
+                <marker date="1408553375055" expanded="false" signature="4484:4511" placeholder="..." />
+                <marker date="1408553375055" expanded="false" signature="5698:5750" placeholder="..." />
+                <marker date="1408553375055" expanded="false" signature="6016:6028" placeholder="..." />
+                <marker date="1408553375055" expanded="false" signature="6838:6865" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="private_chat.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/private_chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="3" selection-start="4029" selection-end="4029" vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="2023">
+              <folding>
+                <marker date="1408180323926" expanded="false" signature="570:635" placeholder="..." />
+                <marker date="1408180323926" expanded="false" signature="1426:1491" placeholder="..." />
+                <marker date="1408180323926" expanded="false" signature="2000:2065" placeholder="..." />
+                <marker date="1408180323926" expanded="false" signature="2879:2911" placeholder="..." />
+                <marker date="1408180323926" expanded="false" signature="3005:3032" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rooms.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/rooms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="88" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1258">
+              <folding>
+                <marker date="1408180323885" expanded="false" signature="947:979" placeholder="..." />
+                <marker date="1408180323885" expanded="false" signature="1073:1100" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_page.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/login_page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="33" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image_Change.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/Image_Change.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="1011" selection-end="1011" vertical-scroll-proportion="-13.730769" vertical-offset="85" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User_Profile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/User_Profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="57" selection-start="6869" selection-end="6952" vertical-scroll-proportion="-45.76923" vertical-offset="255" max-vertical-offset="8568">
+              <folding>
+                <marker date="1408743663178" expanded="false" signature="3830:3842" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="3937:3958" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="4240:4257" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="4337:4362" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="12924:12956" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="14117:14144" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="15805:15857" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="17073:17085" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="17176:17197" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="17480:17496" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="17528:17577" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="18078:18111" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="18336:18352" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="21728:21780" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="22046:22058" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="23508:23535" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="27155:27207" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="27736:27748" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="29023:29050" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="32992:33019" placeholder="..." />
+                <marker date="1408743663178" expanded="false" signature="35141:35168" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User_Status.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/User_Status.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="10" selection-start="435" selection-end="980" vertical-scroll-proportion="3.9230769" vertical-offset="595" max-vertical-offset="4386">
+              <folding>
+                <marker date="1408726183165" expanded="false" signature="3725:3741" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="3773:3798" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="4133:4145" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="4268:4278" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="4365:4377" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="4601:4617" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="5596:5623" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="7525:7541" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="7573:7598" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="7905:7917" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="8040:8050" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="8137:8149" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="8373:8389" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="9285:9312" placeholder="..." />
+                <marker date="1408726183165" expanded="false" signature="10827:10854" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_page.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/login_page.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="23" selection-start="267" selection-end="277" vertical-scroll-proportion="4.3076925" vertical-offset="282" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Create_New_Issue.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/Create_New_Issue.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="3" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="1768">
+              <folding>
+                <marker date="1408728916270" expanded="false" signature="1609:1636" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sign_Up.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/Sign_Up.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.662768" vertical-offset="85" max-vertical-offset="697">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/public/javascripts/Registration.js" />
+        <option value="$PROJECT_DIR$/views/Sign_Up.ejs" />
+        <option value="$PROJECT_DIR$/views/Image.ejs" />
+        <option value="$PROJECT_DIR$/views/login_page.rjs.html" />
+        <option value="$PROJECT_DIR$/views/login.ejs" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/views/login_page.ejs" />
+        <option value="$PROJECT_DIR$/views/Practice.ejs.html" />
+        <option value="$PROJECT_DIR$/views/Temp.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/bootstrap.css" />
+        <option value="$PROJECT_DIR$/views/Practice.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/login_page.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/Create_New_Issue.ejs.html" />
+        <option value="$PROJECT_DIR$/views/User_Post.ejs.html" />
+        <option value="$PROJECT_DIR$/views/public_chat.ejs.html" />
+        <option value="$PROJECT_DIR$/routes/sockets.js" />
+        <option value="$PROJECT_DIR$/views/rooms.ejs" />
+        <option value="$PROJECT_DIR$/views/private_chat.ejs" />
+        <option value="$PROJECT_DIR$/views/public_chat.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/rooms.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/public_chat.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/private_chat.js" />
+        <option value="$PROJECT_DIR$/views/forget_your_password.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/Autotag/jquery-ui.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/Autotag/jquery.tagit.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/Autotag/examples.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/Autotag/tagit.ui-zendesk.css" />
+        <option value="$PROJECT_DIR$/views/User_Post.ejs" />
+        <option value="$PROJECT_DIR$/views/Status.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/views/User_Status.ejs" />
+        <option value="$PROJECT_DIR$/views/Image_Change.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/Sign_Up.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/Create_New_Issue.js" />
+        <option value="$PROJECT_DIR$/views/AddEvent.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/User_Profile.js" />
+        <option value="$PROJECT_DIR$/routes/DataBaseWork.js" />
+        <option value="$PROJECT_DIR$/views/Create_New_Issue.ejs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1366" />
+    <option name="height" value="729" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show_data_mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show_data_mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cacahe Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show_data_mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cacahe Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show_data_mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cacahe Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show_data_mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cacahe Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="show_data_mongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cacahe Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editor" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/firstfile" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\WebstormProjects\Cacahe Project\public\javascripts" />
+      <recent name="C:\Users\dell\WebstormProjects\Cacahe Project\views" />
+      <recent name="C:\Users\dell\WebstormProjects\Cacahe Project\node_modules" />
+      <recent name="C:\Users\dell\WebstormProjects\Cacahe Project\public\javascripts\date" />
+      <recent name="C:\Users\dell\WebstormProjects\Cacahe Project\public\stylesheets\Autotag" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="false" name="Temp.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/show_data_mongo/views/Temp.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Temp.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Temp.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3639e991-4d17-4696-b186-8f92c2c6ab49" name="Default" comment="" />
+      <created>1380382790708</created>
+      <updated>1380382790708</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="729" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24814814" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989899" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.040201005" sideWeight="0.50222224" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3752094" sideWeight="0.4977778" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.49887303" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1963" column="3" selection-start="34200" selection-end="34218" vertical-scroll-proportion="0.0" vertical-offset="33205" max-vertical-offset="104941" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/stores/redis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/sockets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Practice.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="335" selection-end="335" vertical-scroll-proportion="13.076923" vertical-offset="510" max-vertical-offset="2737" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/rooms.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="58" selection-start="288" selection-end="1521" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/private_chat.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="7" selection-start="0" selection-end="3179" vertical-scroll-proportion="0.0" vertical-offset="1407" max-vertical-offset="1768" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public_chat.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="32" selection-start="3826" selection-end="3826" vertical-scroll-proportion="0.0" vertical-offset="2023" max-vertical-offset="2227" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-ui-1.10.4.custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6001" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/a.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="7" selection-start="1052" selection-end="1052" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/public_chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="88" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1938" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="393" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/nodemailer/lib/engines/ses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="4216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/forget_your_password.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Autotag/jquery-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="387" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/Autotag/jquery.tagit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="36" selection-start="204" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="493" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="10" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.0" vertical-offset="2197" max-vertical-offset="5389" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/date/dateFormat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7939" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Sign_Up.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="55" selection-start="0" selection-end="1626" vertical-scroll-proportion="-9.576923" vertical-offset="329" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="39" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0" vertical-offset="1082" max-vertical-offset="1547" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/q/q.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="33031" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="10" selection-start="5781" selection-end="5781" vertical-scroll-proportion="0.0" vertical-offset="3950" max-vertical-offset="29172" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="18" selection-start="4103" selection-end="4103" vertical-scroll-proportion="0.0" vertical-offset="3066" max-vertical-offset="13685" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="418" column="0" selection-start="8826" selection-end="8826" vertical-scroll-proportion="0.0" vertical-offset="6772" max-vertical-offset="11475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1724" column="25" selection-start="45292" selection-end="45292" vertical-scroll-proportion="0.0" vertical-offset="29166" max-vertical-offset="44472" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebStorm7/system/extLibs/nodejs-v0.10.12-src/core-modules-sources/lib/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="16" selection-start="3238" selection-end="3238" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="4709" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mpromise/lib/promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="7" selection-start="3823" selection-end="3823" vertical-scroll-proportion="0.0" vertical-offset="2629" max-vertical-offset="4658" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="325" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/AddEvent.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="91" selection-start="1249" selection-end="1276" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="11679" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="33" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.0" vertical-offset="1884" max-vertical-offset="2380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/SignUpBackGround.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="0" selection-start="6216" selection-end="6216" vertical-scroll-proportion="0.0" vertical-offset="3655" max-vertical-offset="38845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Image.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="49" selection-start="642" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="356" column="136" selection-start="1739" selection-end="12072" vertical-scroll-proportion="0.0" vertical-offset="5934" max-vertical-offset="6358">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Status.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="66" selection-start="1042" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Create_New_Issue.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="37" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/DataBaseWork.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="12597">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-2.0.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="150195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Image_Change.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1011" selection-end="1011" vertical-scroll-proportion="-13.730769" vertical-offset="85" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/private_chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="3" selection-start="4029" selection-end="4029" vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="2023">
+          <folding>
+            <marker date="1408180323926" expanded="false" signature="570:635" placeholder="..." />
+            <marker date="1408180323926" expanded="false" signature="1426:1491" placeholder="..." />
+            <marker date="1408180323926" expanded="false" signature="2000:2065" placeholder="..." />
+            <marker date="1408180323926" expanded="false" signature="2879:2911" placeholder="..." />
+            <marker date="1408180323926" expanded="false" signature="3005:3032" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/rooms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="88" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1258">
+          <folding>
+            <marker date="1408180323885" expanded="false" signature="947:979" placeholder="..." />
+            <marker date="1408180323885" expanded="false" signature="1073:1100" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Create_New_Issue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="3" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1768">
+          <folding>
+            <marker date="1408728916270" expanded="false" signature="1609:1636" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/login_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="33" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login_page.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="267" selection-end="277" vertical-scroll-proportion="4.3076925" vertical-offset="282" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/User_Post.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="1098" selection-end="1098" vertical-scroll-proportion="11.769231" vertical-offset="680" max-vertical-offset="3026">
+          <folding>
+            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#li#0;tag#ul#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1408553375055" expanded="false" signature="4360:4387" placeholder="..." />
+            <marker date="1408553375055" expanded="false" signature="4484:4511" placeholder="..." />
+            <marker date="1408553375055" expanded="false" signature="5698:5750" placeholder="..." />
+            <marker date="1408553375055" expanded="false" signature="6016:6028" placeholder="..." />
+            <marker date="1408553375055" expanded="false" signature="6838:6865" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/User_Status.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="10" selection-start="435" selection-end="980" vertical-scroll-proportion="3.9230769" vertical-offset="595" max-vertical-offset="4386">
+          <folding>
+            <marker date="1408726183165" expanded="false" signature="3725:3741" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="3773:3798" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="4133:4145" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="4268:4278" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="4365:4377" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="4601:4617" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="5596:5623" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="7525:7541" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="7573:7598" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="7905:7917" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="8040:8050" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="8137:8149" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="8373:8389" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="9285:9312" placeholder="..." />
+            <marker date="1408726183165" expanded="false" signature="10827:10854" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/User_Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="57" selection-start="6869" selection-end="6952" vertical-scroll-proportion="-45.76923" vertical-offset="255" max-vertical-offset="8568">
+          <folding>
+            <marker date="1408743663178" expanded="false" signature="3830:3842" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="3937:3958" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="4240:4257" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="4337:4362" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="12924:12956" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="14117:14144" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="15805:15857" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="17073:17085" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="17176:17197" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="17480:17496" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="17528:17577" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="18078:18111" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="18336:18352" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="21728:21780" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="22046:22058" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="23508:23535" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="27155:27207" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="27736:27748" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="29023:29050" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="32992:33019" placeholder="..." />
+            <marker date="1408743663178" expanded="false" signature="35141:35168" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Sign_Up.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.662768" vertical-offset="85" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

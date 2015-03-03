@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="/stylesheets/style.css"/>
+        <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+        <link rel="stylesheet"href="/stylesheets/jquery-ui-1.10.4.custom.css"/>
+    <!--<link rel="stylesheet"href="/stylesheets/Autotag/examples.css"/>
+    <link rel="stylesheet"href="/stylesheets/Autotag/jquery.tagit.css"/>
+    <link rel="stylesheet"href="/stylesheets/Autotag/jquery-ui.css"/>
+    <link rel="stylesheet"href="/stylesheets/Autotag/master.css"/>
+    <link rel="stylesheet"href="/stylesheets/Autotag/reset.css"/>
+    <link rel="stylesheet"href="/stylesheets/Autotag/subpage.css"/>
+    <link rel="stylesheet"href="/stylesheets/Autotag/tagit.ui-zendesk.css"/>-->
+    <link rel="stylesheet"href="/stylesheets/Autotag/jquery.tagit.css"/>
+    <link rel="stylesheet"href="/stylesheets/Autotag/tagit.ui-zendesk.css"/>
+        <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+        <title></title>
+</head>
+
+<body style="background-color: #000000" id="forget_your_passwod_body">
+<div class="row-fluid">
+    <div class="span2 offset1">
+        <input  id="autocomplete" title="type &quot;a&quot;">
+        <Button class="btn-danger" id="SerachAllContent">Search <i class="icon-search"></i></Button>
+    </div>
+    <div class="span6 offset2">
+        <ul class="nav ">
+            <li style="float: right" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"      href="#">
+                    <div style="display: inline-block" id="ali"></div>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/acount_setting">Account Setting</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="#">Privace Setting</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/log_out">LogOut</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="margin-top: 25px;" class="row-fluid ">
+    <!--DIsplay ALl Information Of Currentlu Login Useer----------------------------------------------------------->
+    <div class="span4">
+        <ul class="thumbnails">
+            <li>
+                <div  style="background-color: #f5f5f5" class="thumbnail">
+                    <div class="get_user_image"></div>
+                    <div class="caption">
+                        <h2 >Profile Information</h2>
+                        <form class="form-horizontal">
+                            <div class="control-group">
+                                <label class="control-label" for="inputEmail">Name</label>
+                                <div class="controls">
+                                    <label class="control-label" ><%= doc.first_name_in_database %> </label>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">Email </label>
+                                <div class="controls">
+                                    <label class="control-label" for="inputPassword"><%= doc.email_in_database %> </label>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword"> Date Of Birth </label>
+                                <div class="controls">
+                                    <label class="control-label" for="inputPassword">dddddd </label>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">PhoneNo  </label>
+                                <div id='phone_no' class="controls">
+                                  <!--  <label class="control-label" for="inputPassword">03-07-1994 </label>-->
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">Followers  </label>
+                                <div id='followers_no' class="controls">
+                                    <!--<label class="control-label" for="inputPassword">1000 </label>-->
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">Following  </label>
+                                <div id='following_no' class="controls">
+                                    <!--<label class="control-label" for="inputPassword">1000 </label>-->
+                                </div>
+                            </div>
+                        </form>
+                        <p><a href="#" class="btn btn-primary">Account Setting</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--Here All Followers list And Chat ------------------------------------------------------------------------------>
+    <div class="row-fluid">
+            <div   class="span5">
+                <ul class="nav nav-pills">
+                    <li><a href="#">Followers</a></li>
+                    <li><a href="#">Following</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li  class="dropdown">
+                        <a   href="#" id='ali'  class="dropdown-toggle"    data-toggle="dropdown"     >
+                            Issue
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/create_new_issue">Create Issue</a></li>
+                            <li><a id='show_all_issue' href="#">Show Issue</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Delete Issue</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        <div id="view_your_repositry" class="span5"></div>
+        <section class="span1 offset1" style="float: right"   id="welcome">
+            <div class="control-group">
+                <a id="startchat" type="button" href="/chatroom" target="_blank" >Public Chat </a>
+                <div class="controls">
+                    <a id="one" type="button" href="/rooms" target="_blank"  >Private Chat </a>
+                </div>
+            </div>
+        </section>
+     </div>
+
+
+</div>
+
+
+
+
+
+
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script src="/javascripts/jquery-ui-1.10.4.custom.js"></script>
+<script src="/javascripts/Autotag/jquery-ui.min.js"></script>
+<script src="/javascripts/Autotag/tag-it.js"></script>
+<script src="/javascripts/User_Profile.js"></script>
+
+<script>
+    $(document).ready(function()
+    {
+        var email =  <%- JSON.stringify(doc.email_in_database) %> ;
+
+
+
+
+
+        /* These Two Lines Just PopUp The DropDown Menue From Navigation Bar---------------------------------------------------------------------------------------------------------------------------
+         --------------------------------------------------------------------------------------------------------------------------
+         --------------------------------------------------------------------------------------------------------------------- */
+        $().dropdown('toggle');
+        $('.dropdown-toggle').dropdown()
+        /*-------------------------------------------------------------------------------------------------------------------------
+         * -------------------------------------------------------------------------------------------------------------------------
+         * -----------------------------------------------------------------------------------------------------------------------*/
+        /*This Will Bring All F0llowers No and Following No==========================================================================
+         * ==============================================================================================================================
+         *
+         * */
+        $.ajax
+        ({
+            url:'/getFollowers',
+            type:'POST',
+            data:{email:email},
+            success:function(getFollowers_details)
+            {
+                $('#followers_no').append("<label class='control-label' for='inputPassword'>"+ getFollowers_details.followers_no +"</label>");
+                $('#following_no').append("<label class='control-label' for='inputPassword'>"+ getFollowers_details.following_no +"</label>");
+                $('#phone_no').append("<label class='control-label' for='inputPassword'>"+ getFollowers_details.phone_no +"</label>");
+            }
+        })
+        /*The End  Bring All F0llowers No and Following No===========================================================*/
+
+        /*This is Just Getting The User Image from The DataBase
+         * ----------------------------------------------------------------------------------------------------------------------*/
+
+        $.ajax
+        ({
+            url:'/Get_User_Image',
+            type:'POST',
+            data:{email:email},
+            success:function(Image)
+            {
+
+                if(Image == "yes")
+                {
+
+                    $(".get_user_image").append("<img style='max-width: 50%;margin-left: 0px;' src='/img/SignUpBackGround.jpg'/>");
+                    $("#ali").append("<img style='max-width:20px;height:20px;' src='/img/SignUpBackGround.jpg'/>");
+                }
+                else
+                {
+                    var oImg = document.createElement("img");
+                    var oImg1 = document.createElement("img");
+                    oImg1.setAttribute('src', 'data:image/png;base64,' + Image);
+                    oImg1.setAttribute('style','width:20px;height:20px');
+                    // oImg1.setAttribute('style','height:20px');
+
+                    oImg.setAttribute('src', 'data:image/png;base64,' + Image);
+                    oImg.setAttribute('style','width:50%');
+                    oImg.setAttribute('margin-left','0px');
+                    oImg.setAttribute('alt','100x200');
+
+                    $(".get_user_image").append(oImg);
+                    $("#ali").append(oImg1);
+                }
+            }
+        })
+        $('#show_all_issue').on("click",function()
+        {
+            $('#show_all_issue').hide();
+            $.ajax
+            ({
+                url:'/show_all_issue',
+                type:'post',
+                data:{email:email},
+                success:function(res)
+                {
+                    for(var i =0; i<res.length;i++)
+                    {
+                        $('#view_your_repositry').append("<ul class='nav'><li style='border-bottom: 1px solid gray; padding-bottom: 15px;'><a class='my_all_repositry' href='#'>"+ res[i].issue_name + "</a><li class='divider'></li></ul>");
+
+                    }
+                    $('.my_all_repositry').on("click",function()
+                    {
+                        var issue_name = $(this).html();   //get the value of issue name that you click
+                        var comment_value = 0;
+                        var delete_value = 0;
+                        $('body').empty();
+                        for(var i =0; i<res.length;i++)
+                        {
+                            if(res[i].issue_name == issue_name)
+                            {
+                                $('body').append("<div class='row-fluid'><div class='span2 offset1'> <input  id='autocomplete' title='type &quot;a&quot;'><Button class='btn-danger' id='SerachAllContent'>Search <i class='icon-search'></i></Button></div><div class='span6 offset2'><ul class='nav '><li style='float: right' class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown'  href='#'><div style='display: inline-block' id='ali'></div><b class='caret'></b></a> <ul class='dropdown-menu'><li><a href='/'>Profile</a></li><li><a href='#'>Account Setting</a></li><li><a href='#'>Privace Setting</a></li><li class='divider'></li><li><a href='/log_out'>LogOut</a></li></ul></li></ul></div></div><div style='margin-top: 25px' class='row-fluid'><div class='tag'></div><div style='border: 1px solid green;background-color: #f5f5f5' class='span8 offset2'><div class='media'><a class='pull-left' href='#'><div  id='issue_image'></div></a><div class='media-body'><h4 class='media-heading'>"+ res[i].issue_name +"</h4><blockquote><p class='well-large'>"+ res[i].issue_description+"</p></blockquote><pre><code class='codeIt'>"+res[i].issue_content +"</code></pre><small><cite>Posted By  <strong><a href='#'>"+ res[i].user_by+"</a></strong></cite></small><small class='pull-right'><cite><a href='#'>Like</a>&nbsp;&nbsp;&nbsp;<div style='color: blue;display: inline-block'>0 Likes</div></cite></small><br/><div class='row-fluid'><div class='span4'><textarea  id='cmt_text' class='divider' placeholder='Enter Your Comment Over Herer'></textarea><button class='btn-large' id='cmt_button'>Comment</button></div><div class='span2 offset3'><blockquote id='already_tag'></blockquote></div></div></div></div></div><div style='margin-top: 25px' class='row-fluid'><div id='comment_area' style='margin-top: 32px' class='span8 offset2'></div><button id='delete_issue' style='float: right' class='btn btn-danger'>Delete Issue </button> </div>");
+                                $.ajax
+                                ({
+                                    url:'/Get_User_Image',
+                                    type:'POST',
+                                    data:{email:res[i].user_email},
+                                    success:function(Image)
+                                    {
+
+                                        if(Image == "yes")
+                                        {
+                                            $("#ali").append("<img style='max-width:20px;height:20px;' src='/img/SignUpBackGround.jpg/public/img/SignUpBackGround.jpg'/>");
+                                            $("#issue_image").append("<img style='max-width:60px;height:64px;' class='media-object' src='/img/SignUpBackGround.jpg/public/img/SignUpBackGround.jpg'/>");
+                                        }
+                                        else
+                                        {
+                                            var oImg1 = document.createElement("img");
+                                            var oImg = document.createElement("img");
+                                            oImg1.setAttribute('src', 'data:image/png;base64,' + Image);
+                                            oImg.setAttribute('src', 'data:image/png;base64,' + Image);
+                                            oImg1.setAttribute('id', 'image');
+                                            oImg.setAttribute('class', 'media-object');
+                                            oImg1.setAttribute('style','width:20px;height:20px');
+                                            oImg.setAttribute('style','width:60px;height:64px')
+                                            $("#ali").append(oImg1);
+                                            $("#issue_image").append(oImg);
+                                        }
+                                    }
+                                })
+                                /*Whether This Email Have Any Tag Or Not If Not Then write No Tag*/
+                                $.ajax({
+                                    url:'/get_tags',
+                                    type:'post',
+                                    data:{issue_name:issue_name,email:email},
+                                    success:function(tag_res)
+                                    {
+                                       // alert(tag_res[0].tag);
+                                        if(tag_res[0].tag == undefined)
+                                        {
+                                            $('.tag').append("<div class=''><p style='color: blue'><strong>Tag AnyOne</strong><ul style='width: 16%;' id='singleFieldTags'></ul><button class='btn btn-primary' id='ali1'>Tag</button></p><p style='color: blue'><strong>Result</strong><br/><input style='width: 16%' name='tags' id='mySingleField'  disabled='true'></p></div>");
+                                            $('#already_tag').append("<small>No Tag  <cite title='Source Title'> Here </cite></small>");
+                                        }
+                                        else
+                                        {
+                                            for(var f =0 ; f <tag_res[0].tag.length; f++)
+                                            {
+
+                                                $('#already_tag').append("<small>Tag By <cite title='Source Title'> " + tag_res[0].tag[f].tag_name +  " </cite></small>");
+                                            }
+                                        }
+                                        /* $('.tag').append("<ul id='tag_ul' ></ul>")*/
+
+
+
+                                    }
+                                })
+                                /*The End Whether This Email Have Any Tag Or Not If Not Then write No Tag*/
+
+
+                                /*Here Tag Module*==================================================================================================*/
+
+                                var str = new Array();
+                                var count = 0;
+                                var one=0;
+                                var two=0;
+                                var last ;
+
+                                var first_name = [];
+                                var email_of_all_user=[];
+                                var filter_data = [];
+                                var filter_email  = [];
+                                var filter_count = 0 ;
+
+                                $.ajax
+                                ({
+                                    url:'/ShowAllAvailableUser',
+                                    type:'POST',
+                                    success:function(alluserinfodata)
+                                    {
+                                        if(alluserinfodata.length == 0 )
+                                        {
+                                            alert("No User Have Account");
+                                        }
+                                        else
+                                        {
+
+                                            for(var i=0;i<alluserinfodata.length;i++)
+                                            {
+                                                first_name[i]=alluserinfodata[i].first_name_in_database;  //put All User Available Name I
+                                                email_of_all_user[i]=alluserinfodata[i].email_in_database;
+                                            }
+
+                                        }
+                                        $('#myTags').tagit();
+
+                                        $('#singleFieldTags').tagit({
+                                            availableTags: first_name,
+                                            // This will make Tag-it submit a single form value, as a comma-delimited field.
+                                            singleField: true,
+                                            singleFieldNode: $('#mySingleField')
+                                        });
+                                        $('#ali1').on("click",function()
+                                        {
+
+                                            var doc = $('#mySingleField').val();
+
+                                            for(var i =0;i<doc.length;i++)
+                                            {
+                                                if(doc.charAt(i)==',')
+                                                { last = i;
+                                                    two = i;
+                                                    str[count]= doc.slice(one,two);
+//i++;
+                                                    one = i + 1;
+                                                    count++;
+                                                }
+                                            }
+                                            str[count]=doc.slice(last+1,doc.length);
+                                            count++;
+                                            for(var l = 0 ;l < count;l++)
+                                            {
+                                                for(k =0;  k < alluserinfodata.length;k++)
+                                                {
+                                                    if(str[l] == first_name[k])
+                                                    {
+                                                        filter_data[filter_count] = str[l];
+                                                        filter_email[filter_count] = email_of_all_user[k];
+                                                        filter_count++;
+                                                    }
+                                                }
+
+                                            }
+
+                                            for(var k =0;k <filter_count;k++)
+                                            {
+                                                var tag_email =  filter_email[k];
+                                                var tag_name = filter_data[k];
+
+                                                runAjaxTag(issue_name,tag_email,tag_name);
+                                            }
+                                            $('.tag').empty();
+                                            $.ajax({
+                                                url:'/get_tags',
+                                                type:'post',
+                                                data:{issue_name:issue_name,email:email},
+                                                success:function(tag_res)
+                                                {
+                                                  //  alert(tag_res[0].tag);
+                                                    if(tag_res[0].tag == undefined)
+                                                    {
+                                                        $('#already_tag').append("<small>No Tag  <cite title='Source Title'> Here </cite></small>");
+                                                    }
+                                                    else
+                                                    {
+                                                        for(var f =0 ; f <tag_res[0].tag.length; f++)
+                                                        {
+
+                                                            $('#already_tag').append("<small>Tag By <cite title='Source Title'> " + tag_res[0].tag[f].tag_name +  " </cite></small>");
+                                                        }
+                                                    }
+                                                   /* $('.tag').append("<ul id='tag_ul' ></ul>")*/
+
+
+
+                                                }
+                                            })
+                                            function runAjaxTag(issue_name,tag_email,tag_name)
+                                            {
+                                                $.ajax
+                                                ({
+                                                    url:'/tag_email',
+                                                    type:'post',
+                                                    data:{issue_name:issue_name,tag_email:tag_email,tag_name:tag_name},
+                                                    success:function(res)
+                                                    {
+                                                        if(res == "Sent")
+                                                        {
+
+                                                        }
+                                                        alert(res);
+                                                    }
+                                                })
+
+                                            }
+                                            /**/
+
+
+                                            $('#singleFieldTags li').remove();
+                                            $('#singleFieldTags').css({"height":"50px"});
+                                         });
+
+
+                                    }
+                                })
+
+
+
+
+
+                                /*when User COmment On It This Module will Work Save The Comment And Real Time Display It also -------------------------
+                                 * ----------------------------------------------------------------------------------------------------------------
+                                 * ---------------------------------------------------------------------*/
+                                $('#cmt_button').on("click",function()
+                                {
+
+                                    var comment = $('#cmt_text').val();
+                                    if(comment == '')
+                                    {alert("Empty Comment Is Not Allowed");}
+                                    else
+                                    {
+                                        $.ajax
+                                        ({
+                                            url:'/comment',
+                                            type:'post',
+                                            data:{comment:comment,issue_name:issue_name},
+                                            success:function(res)
+                                            {
+
+                                                $('#comment_area').append("<div style='border-bottom: 1px solid gray ;padding-bottom: 15px;' class='media'> <a class='pull-left' href='#'> <div  id=" + "comment_image" +comment_value + "></div></a><div class='media-body'><h4 class='media-heading'>"+ name + "</h4><a class='delete_comment_class' id=" + "delete_image" +delete_value + "  href='#'><i   style='float: right' class='icon-remove'></i></a><p id=" + "comment_content" +delete_value+">"+ comment+"</p><div class='media'> </div></div></div>");
+                                                $.ajax
+                                                ({
+                                                    url:'/Get_Current_User_Info',
+                                                    type:'POST',
+                                                    success:function(res)
+                                                    {
+                                                        $.ajax
+                                                        ({
+                                                            url:'/Get_User_Image',
+                                                            type:'POST',
+                                                            data:{email:res.email},
+                                                            success:function(Image)
+                                                            {
+
+                                                                if(Image == "yes")
+                                                                {
+
+
+                                                                    $('#comment_image'+ comment_value+'').append("<img style='max-width:60px;height:64px;' class='media-object' src='/img/SignUpBackGround.jpg/public/img/SignUpBackGround.jpg'/>");
+                                                                    comment_value++;
+                                                                    delete_value++;
+                                                                }
+                                                                else
+                                                                {
+
+                                                                    var oImg1 = document.createElement("img");
+                                                                    oImg1.setAttribute('src', 'data:image/png;base64,' + Image);
+                                                                    oImg1.setAttribute('class', 'media-object');
+                                                                    oImg1.setAttribute('style','width:60px;height:64px')
+                                                                    //$(".comment_image").append(oImg1);
+                                                                    $('#comment_image'+ comment_value+'').append(oImg1);
+                                                                    comment_value++;
+                                                                    delete_value++;
+
+                                                                }
+
+
+
+                                                            }
+                                                        })
+
+                                                    }
+                                                })
+                                            }
+                                        })
+                                    }
+                                    $('.delete_comment_class').on("click",function()
+                                    {alert(delete_value);
+
+
+
+                                        var id_of_comment_delete = $(this).attr("id");      //get the id of current click button that i generated dynamically
+                                        alert(id_of_comment_delete);
+                                        var no_of_comment_delete = id_of_comment_delete.charAt(12);
+                                        alert(no_of_comment_delete);
+
+                                        var comment_value =  $('#comment_content'+ no_of_comment_delete +'').html();
+
+
+
+
+                                        $.ajax
+                                        ({
+                                            url:'/delete_comment',
+                                            type:'post',
+                                            data:{comment_value:comment_value,issue_name:issue_name},
+                                            success:function(res)
+                                            {
+                                                window.location.href="/";
+                                            }
+                                        })
+                                    });
+
+
+                                });
+
+
+
+                                /*====================The End==========================================================================================*/
+                               /*THis Module Send Delete The Issue ============================================================
+                               * ==============================================================================================*/
+                                $('#delete_issue').on("click",function(){
+
+                                    $('<div id="dvConfirmModal"></div>').appendTo('body')
+                                            .html('<p>These item will be permanently deleted and cannot be recovered. Please confirm by clicking the OK button.</p>')
+                                            .dialog({
+                                                modal: true,
+                                                title: 'Delete selected item?',
+                                                zIndex: 500,
+                                                autoOpen: true,
+                                                width: 'auto',
+                                                resizable: false,
+                                                draggable: false,
+                                                buttons: {
+                                                    Ok: function() {
+                                                        $.ajax({
+                                                            url:'/delete_issue',
+                                                            type:'post',
+                                                            data:{issue_name:issue_name},
+                                                            success:function(docs)
+                                                            {
+                                                                if(docs == 'delete')
+                                                                {
+                                                                    window.location.href="/";
+                                                                }
+
+                                                            }
+                                                        })
+                                                        $(this).dialog("close");
+                                                    },
+                                                    Cancel: function() {
+                                                        $(this).dialog("close");
+                                                    }
+                                                },
+                                                close: function(event, ui) {
+                                                    $(this).remove();
+                                                }
+                                            });
+                                });
+                           /*The End Of dleete Issue ====================================================================
+                           * ===================================================================================================*/
+                                /* These Two Lines Just PopUp The DropDown Menue From Navigation Bar---------------------------------------------------------------------------------------------------------------------------
+                                 --------------------------------------------------------------------------------------------------------------------------
+                                 --------------------------------------------------------------------------------------------------------------------- */
+                                $().dropdown('toggle');
+                                $('.dropdown-toggle').dropdown()
+                                /*-------------------------------------------------------------------------------------------------------------------------
+                                 * -------------------------------------------------------------------------------------------------------------------------
+                                 * -----------------------------------------------------------------------------------------------------------------------*/
+                                $('.codeIt').each(function(i)
+                                {
+                                    $(this).text($(this).html());
+                                });
+
+
+       /*This Loop Iterating ALl Commets Of The Current Issue And Ajax Will Send The email Of Who Comment In the Issue And Back Its
+       *Profile  Image Data And Also It WIll Display ALl Comment With User Name And Its IMage ----------------------------------------
+        * -------------------------------------------------------------------------------------------------------------------- */
+
+
+                                for(var total_comment=0;total_comment<res[i].Comments.length;total_comment++)
+                                {
+                                    $('#comment_area').append("<div style='border-bottom: 1px solid gray ;padding-bottom: 15px;' class='media'> <a class='pull-left' href='#'> <div  id=" + "comment_image" + total_comment + "></div></a><div class='media-body'><h4 class='media-heading'>"+ res[i].Comments[total_comment].comment_by + "</h4><a class='delete_comment_class' id=" + "delete_image" +total_comment + "  href='#'><i   style='float: right' class='icon-remove'></i></a><p id=" + "comment_content" +total_comment+" >"+ res[i].Comments[total_comment].comment_content+"</p><div class='media'> </div></div></div>");
+                                    comment_value++;
+                                    delete_value++;
+                                    runAjax(total_comment,res,i);
+                                }
+
+                                function runAjax(num,res,i)
+                                {
+                                    $.ajax
+                                    ({
+                                        url:'/Get_User_Image',
+                                        type:'POST',
+                                        data:{email:res[i].Comments[num].comment_email},
+                                        success:function(Image)
+                                        {
+
+                                            if(Image == "yes")
+                                            {
+
+
+                                                $('#comment_image'+ num +'').append("<img style='max-width:60px;height:64px;' class='media-object' src='/img/SignUpBackGround.jpg/public/img/SignUpBackGround.jpg'/>");
+
+                                            }
+                                            else
+                                            {
+
+                                                var oImg1 = document.createElement("img");
+                                                oImg1.setAttribute('src', 'data:image/png;base64,' + Image);
+                                                oImg1.setAttribute('class', 'media-object');
+                                                oImg1.setAttribute('style','width:60px;height:64px')
+                                                //$(".comment_image").append(oImg1);
+                                                $('#comment_image'+ num +'').append(oImg1);
+                                            }
+
+                                        }
+                                    })
+
+                                }
+        /*The End ---------------------------------------------------------------------------------------------------------------
+        * -------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+                            }
+                            $('.delete_comment_class').on("click",function()
+                            {
+
+
+
+                                var id_of_comment_delete = $(this).attr("id");      //get the id of current click button that i generated dynamically
+                               alert(id_of_comment_delete);
+                                var no_of_comment_delete = id_of_comment_delete.charAt(12);
+                                alert(no_of_comment_delete);
+
+                                var comment_value =  $('#comment_content'+ no_of_comment_delete +'').html();
+
+
+
+
+                                $.ajax
+                                ({
+                                    url:'/delete_comment',
+                                    type:'post',
+                                    data:{comment_value:comment_value,issue_name:issue_name},
+                                    success:function(res)
+                                    {
+                                        window.location.href="/";
+                                    }
+                                })
+                            });
+                        }
+
+                    });
+
+                }
+            })
+        });
+    });
+</script>
+</body>
+</html>

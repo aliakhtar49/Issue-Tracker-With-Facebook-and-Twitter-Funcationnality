@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap-responsive.css"/>
+    <link rel="stylesheet"href="/stylesheets/jquery-ui-1.10.4.custom.css"/>
+    <link rel="stylesheet"href="/stylesheets/bootstrap.css"/>
+    <title></title>
+</head>
+
+<body style="background: #000000">
+<input id='email' type="text" placeholder="emial"/>
+<input id='status'type="text"/>
+<button id="btn_status">Ststus</button>
+
+<script src="/javascripts/jquery-2.0.3.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script src="/javascripts/jquery-ui-1.10.4.custom.js"></script>
+<script src="/javascripts/date/dateFormat.js"></script>
+<script src="/javascripts/date/jquery.dateFormat.js"></script>
+<script src="/javascripts/User_Profile.js"></script>
+<script src="/javascripts/Friends.js"></script>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url:'/get_status',
+            type:'post',
+            success:function(res){
+
+               alert($.format.date(res[0].createdAt, "dd/MM/yyyy"));
+                alert(jQuery.format.prettyDate(res[0].createdAt));
+
+
+            }
+        })
+var email = $('#email').val();
+        $('#btn_status').on("click",function(){
+            var status = $('#status').val();
+            $.ajax({
+                url:'/save_status',
+                type:'post',
+                data:{email1:email,status:status},
+                success:function(res)
+                {
+                    alert(res);
+                }
+            })
+        });
+    });
+</script>
+</body>
+</html>

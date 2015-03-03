@@ -1,0 +1,25 @@
+  $.ajax({
+        url:'/GetProfilePic',
+        type:'POST'/*,
+        contentType: 'image/png'*/,
+        success:function(Image)
+        {
+
+            if(Image == "yes")
+            {
+
+                $("#profile_image_over_here").append("<img src='/img/logofinal.jpg'/>");
+            }
+            else
+            {
+            var oImg = document.createElement("img");
+           // oImg.css({"height":"100%"});
+            oImg.setAttribute('src', 'data:image/png;base64,' + Image);
+            $("#profile_image_over_here").append(oImg);
+          //  $('#profile_image_over_here').contentType('image/png');
+           // $('#profile_image_over_here').append(res);
+            }
+
+
+        }
+    })
